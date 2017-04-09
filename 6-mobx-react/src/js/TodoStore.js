@@ -1,4 +1,6 @@
-import { computed, observable } from "mobx"
+import { useStrict, computed, observable } from "mobx"
+
+useStrict(false)
 
 class Todo {
   @observable value

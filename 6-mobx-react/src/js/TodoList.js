@@ -1,9 +1,12 @@
 import React from "react"
+import PropTypes from 'prop-types';
+import {Component} from 'react'
 import { observer } from "mobx-react"
 
 
 @observer
-export default class TodoList extends React.Component {
+//export default class TodoList extends React.Component {
+  export default class TodoList extends Component {
   createNew(e) {
     if (e.which === 13) {
       this.props.store.createTodo(e.target.value)
