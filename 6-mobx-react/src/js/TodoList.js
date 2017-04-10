@@ -15,7 +15,7 @@ import { observer } from "mobx-react"
   }
 
   filter(e) {
-    this.props.store.filter = e.target.value
+    this.props.store.setFilter(e.target.value)
   }
 
   toggleComplete(todo) {
